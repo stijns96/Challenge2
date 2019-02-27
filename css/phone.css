@@ -6,20 +6,30 @@
         font-weight:200;
     }
     
-    #clockdiv
-    {
-        font-size:25px
+    #clockdiv{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 25px;
     }
 
-    #clockdiv div > span
-    {
-        padding:10px;
-        min-width:63px;
+    #clockdiv > div{
+        padding: 10px;
+        margin-bottom: 25px;
+        display: inline-block;
     }
 
-    .smalltext
-    {
-        padding-top:5px;
-        font-size:14px
+    #clockdiv div > span{
+        padding: 10px;
+        min-width: 63px;
+    }
+    
+    #clockdiv div > .smalltext {
+        font-size: 14px;
+    }
+    
+    #sun-box{
+        width: 100px;
+        height: 200px;
     }
 }

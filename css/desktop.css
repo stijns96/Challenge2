@@ -1,3 +1,31 @@
 @media only screen and (min-width: 901px) and (max-width:1200px) {
+    #countdown h1
+    {
+        line-height:100px;
+        font-size:75px;
+        font-weight:200;
+    }
     
+    #clockdiv{
+        font-size: 50px;
+    }
+
+    #clockdiv > div{
+        padding: 12.5px;
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 15px;
+        min-width: 96px;
+    }
+    
+    #clockdiv div > .smalltext {
+        font-size: 14px;
+    }
+    
+    #sun-box{
+        width: 200px;
+        height: 200px;
+    }
 }
