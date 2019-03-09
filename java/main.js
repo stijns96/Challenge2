@@ -5,13 +5,13 @@ window.onload = function () {
             h = date.getHours(), // 0 - 23
             m = date.getMinutes(), // 0 - 59
             s = date.getSeconds(), // 0 - 59
-            greeting = document.getElementById('greeting'),
+            greeting = document.getElementsByClassName('greeting'),
             sunBox = document.getElementById('sun-box'),
             body = document.getElementsByTagName('body'),
             tl1 = new TimelineMax();
         
         if (h >= 0) {
-            greeting.innerHTML = 'Goedenacht';
+            greeting.innerHTML = 'Goedenacht'; 
             tl1.set(body, {backgroundColor: "rgb(0,0,0)"});
         }
         
