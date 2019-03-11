@@ -51,19 +51,12 @@ window.onload = function () {
     var sunBox = document.getElementById('sun-box'),
         tl1 = new TimelineMax();
     
-    tl1.to(sunBox, 40, {
-        ease: Power0.easeNone,
-        rotation: 180,
-        repeat: -1
-    }, 1);
+    tl1.to(sunBox, 40, {ease: Power0.easeNone, rotation: 180, repeat: -1}, 1);
     
-    var tl = new TimelineLite({onUpdate: updateSlider});
+    var tl = new TimelineLite();
     tl.set("#countdown", {visibility: "visible"})
+    
         .from("h1", 0.5, {bottom: 100, autoAlpha : 0, delay: 0.25})
     
         .staggerFrom("#clockdiv >div", 0.5, {scale: 0, rotation: -180, autoAlpha: 0}, 0.2, "stagger");
-		
-    function updateSlider() {
-        $("#slider").slider("value", tl.progress() * 100);
-    }
 };
