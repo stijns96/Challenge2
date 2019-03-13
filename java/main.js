@@ -34,12 +34,9 @@ window.onload = function () {
         m = (m < 10) ? "0" + m : m;
         s = (s < 10) ? "0" + s : s;
 
-        document.getElementsByClassName("hours")[0].innerText = h;
-        document.getElementsByClassName("hours").textContent = h;
-        document.getElementsByClassName("minutes")[0].innerText = m;
-        document.getElementsByClassName("minutes").textContent = m;
-        document.getElementsByClassName("seconds")[0].innerText = s;
-        document.getElementsByClassName("seconds").textContent = s;
+        $(".hours")[0].innerText = h;
+        $(".minutes")[0].innerText = m;
+        $(".seconds")[0].innerText = s;
 
         setTimeout(showTime, 1000);
     
