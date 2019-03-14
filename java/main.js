@@ -34,9 +34,9 @@ window.onload = function () {
         m = (m < 10) ? "0" + m : m;
         s = (s < 10) ? "0" + s : s;
 
-        $(".hours")[0].innerText = h;
-        $(".minutes")[0].innerText = m;
-        $(".seconds")[0].innerText = s;
+        $(".hours").innerText = h;
+        $(".minutes").innerText = m;
+        $(".seconds").innerText = s;
 
         setTimeout(showTime, 1000);
     
